@@ -1,0 +1,13 @@
+image: continuumio/anaconda3
+
+before_script:
+  - apt-get --quiet update --yes
+  - apt-get --quiet install --yes git
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - ./base_script.sh

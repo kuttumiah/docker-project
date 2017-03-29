@@ -3,6 +3,7 @@ image: continuumio/anaconda3
 before_script:
   - apt-get --quiet update --yes
   - apt-get --quiet install --yes git
+  - export SAMPLE_VARIABLE="Hell guys !"
   - git clone https://gitlab.com/kuttumiah/sample-shell.git
   - cd sample-shell
   - chmod +x ./base_script.sh

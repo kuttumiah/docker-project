@@ -7,6 +7,7 @@ before_script:
   - ls -la
   - echo $UID
   - chmod +x ./base_script.sh
+  - ls -la
 
 stages:
   - build
@@ -14,4 +15,4 @@ stages:
 build:
   stage: build
   script:
-    - ./base_script.sh
+    - /bin/bash ./base_script.sh

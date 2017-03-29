@@ -5,6 +5,7 @@ before_script:
   - apt-get --quiet install --yes git
   - pwd
   - ls -la
+  - echo $UID
   - chmod +x ./base_script.sh
 
 stages:

@@ -5,6 +5,7 @@ before_script:
   - apt-get --quiet install --yes git
   - export SAMPLE_VARIABLE="Hello guys !"
   - git clone https://gitlab.com/kuttumiah/sample-shell.git
+  - ls -la
   - cd sample-shell
   - chmod +x ./base_script.sh
 

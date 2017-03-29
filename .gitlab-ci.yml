@@ -3,11 +3,9 @@ image: continuumio/anaconda3
 before_script:
   - apt-get --quiet update --yes
   - apt-get --quiet install --yes git
-  - pwd
-  - ls -la
-  - echo $UID
+  - git clone https://gitlab.com/kuttumiah/sample-shell.git
+  - cd sample-shell
   - chmod +x ./base_script.sh
-  - ls -la
 
 stages:
   - build
@@ -15,4 +13,4 @@ stages:
 build:
   stage: build
   script:
-    - /bin/bash ./base_script.sh
+    - ./base_script.sh
